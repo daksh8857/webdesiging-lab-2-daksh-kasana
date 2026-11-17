@@ -1,0 +1,1 @@
+The static deployment source is in static-site/. The dynamic Express application is in dynamic-app/.

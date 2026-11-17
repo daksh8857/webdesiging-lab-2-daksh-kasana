@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Portfolio</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<form id="portfolioForm">
+<h1>Portfolio</h1>
+<label for="name">Name:</label><input type="text" id="name" name="name" required>
+<label for="father">Father's Name:</label><input type="text" id="father" name="father">
+<label for="mother">Mother's Name:</label><input type="text" id="mother" name="mother">
+<label for="country">Country:</label><select id="country" name="country"><option value="">Select Country</option><option>India</option><option>USA</option><option>UK</option></select>
+<label for="dob">Date of Birth:</label><input type="date" id="dob" name="dob">
+<div class="inline"><b>Gender:</b> <label><input type="radio" name="gender" value="Male"> Male</label> <label><input type="radio" name="gender" value="Female"> Female</label> <label><input type="radio" name="gender" value="Other"> Other</label></div>
+<h3>Education Qualification</h3><small>Enter your education details in the table below.</small>
+<div class="table-wrap"><table><thead><tr><th>S. No.</th><th>Standard</th><th>Board / University</th><th>Passing Year</th><th>Percentage</th></tr></thead><tbody>
+<tr><td>1</td><td><input aria-label="Standard 1" type="text"></td><td><input aria-label="Board 1" type="text"></td><td><input aria-label="Passing year 1" type="text"></td><td><input aria-label="Percentage 1" type="text"></td></tr>
+<tr><td>2</td><td><input aria-label="Standard 2" type="text"></td><td><input aria-label="Board 2" type="text"></td><td><input aria-label="Passing year 2" type="text"></td><td><input aria-label="Percentage 2" type="text"></td></tr>
+<tr><td>3</td><td><input aria-label="Standard 3" type="text"></td><td><input aria-label="Board 3" type="text"></td><td><input aria-label="Passing year 3" type="text"></td><td><input aria-label="Percentage 3" type="text"></td></tr>
+</tbody></table></div>
+<div class="inline course"><b>Selected Course:</b> <label><input type="radio" name="course" value="B.Tech"> B.Tech</label> <label><input type="radio" name="course" value="M.Tech"> M.Tech</label></div>
+<h3>Declaration</h3><label class="declare"><input type="checkbox" required> I declare that the information given above is correct.</label>
+<p class="buttons"><button type="submit">Submit</button> <button type="reset" class="reset">Reset</button></p><p id="formMessage" aria-live="polite"></p>
+</form><script src="script.js"></script></body></html>
